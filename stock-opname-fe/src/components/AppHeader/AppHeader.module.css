@@ -1,0 +1,127 @@
+.header {
+  width: 100%;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #e5e2db;
+  background: #fff;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.brandMark {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  background: #bc0006;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.brandTitle {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  color: #1c1c18;
+}
+
+.brandSubtitle {
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #625d5b;
+}
+
+.userArea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.userMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  min-width: 0;
+}
+
+.userName {
+  display: block !important;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1c1c18;
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.userDetail {
+  display: block !important;
+  font-size: 12px !important;
+  line-height: 16px;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logoutBtn {
+  color: #57534e !important;
+  border: 1px solid #e5e2db !important;
+  border-radius: 8px !important;
+  height: 36px !important;
+  padding: 0 12px !important;
+  flex-shrink: 0;
+}
+
+.logoutBtn:hover {
+  color: #7f1d1d !important;
+  border-color: #fecaca !important;
+  background: #fff !important;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 12px 16px;
+  }
+
+  .brandTitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .userName {
+    max-width: 140px;
+  }
+
+  .userDetail {
+    max-width: 160px;
+  }
+}
